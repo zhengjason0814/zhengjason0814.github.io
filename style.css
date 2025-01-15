@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&display=swap');
 * {
-    font-family: 'Lexend';
-    margin:0px;
+    margin:0px; 
     padding:0px;
 }
 
 html, body {
+    font-family: 'Open Sans' , sans-serif;
+    background-color:rgb(5, 5, 24);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -14,10 +14,9 @@ html, body {
 
 .header {
     display: flex;
-    justify-content:space-between;
+    justify-content:flex-end;
     align-items: center;
     padding: 20px 30px;
-    background-color: #2b3332;
     color: white;
 }
 
@@ -29,6 +28,30 @@ html, body {
 a {
     text-decoration: none;
     color:white;
+}
+
+.hero {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    min-height:100vh;
+    background-image: url(./images/background.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+.center-hero-content {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    color:white;
+    flex-grow:1;
+    margin-top:-100px;
+}
+
+.center-hero-content h1 {
+    font-size: 50px;
 }
 
 .footer {
