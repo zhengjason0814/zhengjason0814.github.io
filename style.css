@@ -17,8 +17,10 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    scroll-behavior: smooth;
 }
 
+/* This starts the content of the page, header and hero */
 .header {
     display: flex;
     justify-content:flex-end;
@@ -35,6 +37,17 @@ html, body {
 a {
     text-decoration: none;
     color:white;
+    font-weight:600;
+    font-size:18px;
+}
+
+.hero-block::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
 }
 
 .hero-block {
@@ -44,7 +57,8 @@ a {
     min-height:100vh;
     background-image: url(./images/background.jpg);
     background-size: cover;
-    background-position: center; 
+    background-position: center;
+    z-index: 1;
 }
 
 .center-hero-content {
@@ -62,11 +76,13 @@ a {
     font-weight:700;
 }
 
+/* This starts the second section of the page, the about me section*/
+
 .about-block {
     display:flex;
     justify-content:space-around;
     align-items: center;
-    background-color:black;
+    background-color:#2d3b66;
     padding: 100px;
 }
 
@@ -81,9 +97,9 @@ a {
     display:flex;
     flex-direction:column;
     color:white;
-    width:500px;
+    width:550px;
     height: 400px;
-    justify-content:baseline;
+    justify-content:center;
     font-size:18px;
 }
 
@@ -96,16 +112,31 @@ a {
     margin-bottom:15px;
 }
 
+.technology {
+    display: flex;
+    gap: 15px;
+  }
+
+
 .technology img {
-    margin-top: 100px;
-    width:60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30%;
+    background-color: white;
+    padding: 3px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
 }
+
+/* This starts the project section of the webpage.*/
 
 .project-block {
     display:flex;
     flex-direction: column;
     color:white;
     align-items:center;
+    padding:250px 100px;
+    background-color:#1a1f3a;
 }
 
 .project-cards {
@@ -126,6 +157,8 @@ a {
     border-color:rgb(255, 255, 255);
     border-radius: 30px;
 }
+
+
 .footer {
     display:flex;
     flex-direction:column;
