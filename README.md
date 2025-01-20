@@ -6,3 +6,7 @@ Currently being developed with HTML and CSS, and aiming to add Javascript and Re
 
 Background Picture: 
 Photo by InstaWalli: https://www.pexels.com/photo/timelapse-photography-of-stars-at-night-169789/
+
+Favicon:
+By Kalashnyk - Flaticon
+https://www.flaticon.com/free-icons/hello
